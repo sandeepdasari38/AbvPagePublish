@@ -24,9 +24,9 @@ public class AbbviePublish {
         
         driver = new ChromeDriver(); 
         driver.manage().window().maximize();       
-        driver.get(props.getProperty("BASEURL"));
-        driver.findElement(By.xpath("//input[@id='username']")).sendKeys(props.getProperty("UID"));
-        driver.findElement(By.xpath("//input[@id='password']")).sendKeys(props.getProperty("PWD"));
+        driver.get(props.getProperty("ABVAUTHURL"));
+        driver.findElement(By.xpath("//input[@id='username']")).sendKeys(props.getProperty("ABVUID"));
+        driver.findElement(By.xpath("//input[@id='password']")).sendKeys(props.getProperty("ABVPASS"));
         driver.findElement(By.xpath("//button[@id='submit-button']")).click();
             
         for (int i = 1; i <= 2347; i++)
