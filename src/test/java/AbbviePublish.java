@@ -4,12 +4,14 @@
 
 import org.testng.annotations.Test; 
 import java.io.FileReader; 
-import java.io.IOException; 
+import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
   
 public class AbbviePublish { 
 	public WebDriver driver ;
@@ -18,18 +20,19 @@ public class AbbviePublish {
 	@Test
     public void abbviePublish() throws IOException, InterruptedException { 
     	
-        FileReader reader=new FileReader("C:\\Users\\Sandeep Kumar Dasari\\eclipse-workspace\\SampleProject\\src\\main\\java\\prop\\abbvieUrl.properties"); 
+        FileReader reader=new FileReader("C:\\Users\\Sandeep Kumar Dasari\\eclipse-workspace\\SampleProject\\src\\main\\java\\prop\\QuiUber.properties"); 
         Properties props=new Properties(); 
         props.load(reader); 
         
         driver = new ChromeDriver(); 
         driver.manage().window().maximize();       
-        driver.get(props.getProperty("ABVAUTHURL"));
-        driver.findElement(By.xpath("//input[@id='username']")).sendKeys(props.getProperty("ABVUID"));
-        driver.findElement(By.xpath("//input[@id='password']")).sendKeys(props.getProperty("ABVPASS"));
+        driver.get(props.getProperty("BASEURL"));
+        driver.findElement(By.xpath("//input[@id='username']")).sendKeys(props.getProperty("UID"));
+        driver.findElement(By.xpath("//input[@id='password']")).sendKeys(props.getProperty("PWD"));
         driver.findElement(By.xpath("//button[@id='submit-button']")).click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
             
-        for (int i = 1; i <= 2347; i++)
+        for (int i = 11; i <= 128; i++)
         {	
 
         driver.get(props.getProperty("URL"+i));  

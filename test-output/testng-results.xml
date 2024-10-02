@@ -2,34 +2,34 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-01T21:21:42 IST" name="Default suite" finished-at="2023-12-01T21:22:41 IST" duration-ms="59194">
+  <suite started-at="2024-10-02T01:29:10 IST" name="Default suite" finished-at="2024-10-02T01:29:37 IST" duration-ms="27320">
     <groups>
     </groups>
-    <test started-at="2023-12-01T21:21:42 IST" name="Default test" finished-at="2023-12-01T21:22:41 IST" duration-ms="59194">
-      <class name="AbbviePublish">
-        <test-method signature="abbviePublish()[pri:0, instance:AbbviePublish@73e22a3d]" started-at="2023-12-01T21:21:42 IST" name="abbviePublish" finished-at="2023-12-01T21:22:41 IST" duration-ms="59153" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+    <test started-at="2024-10-02T01:29:10 IST" name="Default test" finished-at="2024-10-02T01:29:37 IST" duration-ms="27320">
+      <class name="AbbviePublishNew">
+        <test-method signature="abbviePublish()[pri:0, instance:AbbviePublishNew@47faa49c]" started-at="2024-10-02T01:29:10 IST" name="abbviePublish" finished-at="2024-10-02T01:29:37 IST" duration-ms="27264" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=119.0.6045.160)
+              <![CDATA[element click intercepted: Element <a id="pageinfo-trigger" class="editor-GlobalBar-item foundation-toggleable-control coral3-Button coral3-Button--minimal" title="Page Information" data-foundation-toggleable-control-target="#pageinfo-popover" href="#pageinfo-popover" aria-label="Page Information" is="coral-anchorbutton" icon="properties" iconsize="S" variant="minimal" aria-expanded="false" size="M" role="button" aria-disabled="false">...</a> is not clickable at point (22, 22). Other element would receive the click: <coral-dialog class="coral3-Dialog coral3-Dialog--warning is-open" tabindex="0" aria-hidden="false" closable="off" open="" role="alertdialog" aria-labelledby="coral-id-584" aria-describedby="coral-id-585" style="display: block; z-index: 10010;">...</coral-dialog>
+  (Session info: chrome=129.0.6668.60)
 Build info: version: '4.12.0', revision: '249f2a7d1b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7967123428905748e88cc029c18e99fb, get {url=http://34.224.16.46:4502/editor.html/content/skyriziivy/en-us/global-isi/email-isi1.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\SANDEE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55864}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55864/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7967123428905748e88cc029c18e99fb]]>
+Command: [e1945bb0f2ab464e5fa7ae595b2d2742, clickElement {id=f.A76187D569F24F2E273F3D6A9D6BE7A2.d.4A6CB921CCD706D468B3F6357E75C573.e.669}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\SANDEE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60708}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60708/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e1945bb0f2ab464e5fa7ae595b2d2742)] -> xpath: //a[@id='pageinfo-trigger']]
+Session ID: e1945bb0f2ab464e5fa7ae595b2d2742]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=119.0.6045.160)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a id="pageinfo-trigger" class="editor-GlobalBar-item foundation-toggleable-control coral3-Button coral3-Button--minimal" title="Page Information" data-foundation-toggleable-control-target="#pageinfo-popover" href="#pageinfo-popover" aria-label="Page Information" is="coral-anchorbutton" icon="properties" iconsize="S" variant="minimal" aria-expanded="false" size="M" role="button" aria-disabled="false">...</a> is not clickable at point (22, 22). Other element would receive the click: <coral-dialog class="coral3-Dialog coral3-Dialog--warning is-open" tabindex="0" aria-hidden="false" closable="off" open="" role="alertdialog" aria-labelledby="coral-id-584" aria-describedby="coral-id-585" style="display: block; z-index: 10010;">...</coral-dialog>
+  (Session info: chrome=129.0.6668.60)
 Build info: version: '4.12.0', revision: '249f2a7d1b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7967123428905748e88cc029c18e99fb, get {url=http://34.224.16.46:4502/editor.html/content/skyriziivy/en-us/global-isi/email-isi1.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\SANDEE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55864}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55864/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7967123428905748e88cc029c18e99fb
+Command: [e1945bb0f2ab464e5fa7ae595b2d2742, clickElement {id=f.A76187D569F24F2E273F3D6A9D6BE7A2.d.4A6CB921CCD706D468B3F6357E75C573.e.669}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\SANDEE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60708}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60708/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e1945bb0f2ab464e5fa7ae595b2d2742)] -> xpath: //a[@id='pageinfo-trigger']]
+Session ID: e1945bb0f2ab464e5fa7ae595b2d2742
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -42,8 +42,9 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-at AbbviePublish.abbviePublish(AbbviePublish.java:32)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at AbbviePublishNew.abbviePublish(AbbviePublishNew.java:48)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -74,11 +75,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- abbviePublish -->
-      </class> <!-- AbbviePublish -->
+      </class> <!-- AbbviePublishNew -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
